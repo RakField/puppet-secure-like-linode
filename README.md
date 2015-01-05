@@ -28,22 +28,22 @@ Example:<br>
 	Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 
 ## Structure
-|-- secure
-|   |-- files
-|   |   |-- authorized_keys
-|   |   |-- iptables.firewall.rules
-|   |   `-- sshd_config
-|   |-- lib
-|   |   `-- puppet
-|   |       `-- parser
-|   |           `-- functions
-|   |               `-- pw_hash.rb
-|   `-- manifests
-|       |-- fail2ban.pp
-|       |-- firewall.pp
-|       |-- init.pp
-|       `-- ssh.pp
+|-- secure<br>
+|   |-- files<br>
+|   |   |-- authorized_keys<br>
+|   |   |-- iptables.firewall.rules<br>
+|   |   `-- sshd_config<br>
+|   |-- lib<br>
+|   |   `-- puppet<br>
+|   |       `-- parser<br>
+|   |           `-- functions<br>
+|   |               `-- pw_hash.rb<br>
+|   `-- manifests<br>
+|       |-- fail2ban.pp<br>
+|       |-- firewall.pp<br>
+|       |-- init.pp<br>
+|       `-- ssh.pp<br>
 
 ## Sources
 pschyska. PW hashing with puppet parser function. URL: https://gist.github.com/pschyska/26002d5f8ee0da2a9ea0
-Linode. Securing Your Server. URL: https://www.linode.com/docs/security/securing-your-server Vierailtu: 15.12.2014
+Linode. Securing Your Server. URL: https://www.linode.com/docs/security/securing-your-server
