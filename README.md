@@ -8,23 +8,23 @@ Defines basic firewall settings.
 Installs fail2ban.
 
 ## Affects to these services
-•	ssh
-•	fail2ban
-•	iptables
+•	ssh<br>
+•	fail2ban<br>
+•	iptables<br>
 
 ## Affects to these files (edit or create)
-•	/etc/ssh/sshd_config
-•	/home/kayttaja/.ssh/authorized_keys
-•	/etc/iptables.firewall.rules
+•	/etc/ssh/sshd_config<br>
+•	/home/kayttaja/.ssh/authorized_keys<br>
+•	/etc/iptables.firewall.rules<br>
 
 ## Usage
 Works almost from the box. First thing to do is change authorized_keys files content with your own rsa key. To use module it is required to define user and system variables. This can be done in site.pp. 
 
-Example:
+Example:<br>
 	adminuser {’username’:
 		usr_pw => ’userpassword’,
 	}
-
+	<br>
 	Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 
 ## Structure
